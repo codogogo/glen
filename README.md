@@ -1,33 +1,17 @@
-# GLEN is a tool for specializing distributional word vectors for lexical entailment (i.e., hyponym-hypernym relation). The tool/code accompanies the following research paper: 
+# GLEN 
+
+GLEN is a tool for specializing distributional word vectors for lexical entailment (i.e., hyponym-hypernym relation). The tool/code accompanies the following research paper: 
 
 Glavaš, G., & Vulić, I. (2019, July). Generalized Tuning of Distributional Word Vectors for Monolingual and Cross-Lingual Lexical Entailment. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (pp. 4824-4830).
 
-If you're using GLEN in your research, please cite the above work. Here is the corresponding BibTex entry: 
-
-```
-@inproceedings{glavas-vulic-2019-generalized,
-    title = "Generalized Tuning of Distributional Word Vectors for Monolingual and Cross-Lingual Lexical Entailment",
-    author = "Glava{\v{s}}, Goran  and
-      Vuli{\'c}, Ivan",
-    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
-    year = "2019",
-    address = "Florence, Italy",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/P19-1476",
-    doi = "10.18653/v1/P19-1476",
-    pages = "4824--4830"
-}
-```
-
-# Code
+## Code
 
 You will find the code for: 
 
 (1) training the GLEN model for LE specialization described in the paper and
 (2) Predicting LE scores using the GLEN instance you previously trained
 
-## Training GLEN model
+### Training GLEN model
 
 You simply need to run the script glen_train.py: 
 
@@ -41,7 +25,7 @@ subdirectory, see subsection on Resources below).
 The model (which you name with model_name in config) needs to be stored
 stored in ./resources/model. There is already one pre-trained GLEN model available (see Resources section below).
  
-## Predicting LE scores with GLEN
+### Predicting LE scores with GLEN
 
 You need to run the script glen_predict.py which takes two arguments: 
 
@@ -58,7 +42,7 @@ word pairs for which both words are found in the distributional vocabulary
 The output file (preds_path) contains word pairs with associated predicted 
 LE scores.
 
-# Resources 
+## Resources 
 
 The following resources are not part of the GitHub repo due to file sizes, but need to be obtained in order to successfully run GLEN:
 
@@ -76,3 +60,23 @@ Download and unzip the archive and you will find three directories:
 (3) model
 
 Copy these three directories into the "resources" subdirectory found in this repository. 
+
+## Credits
+
+If you're using GLEN in your research, please cite the following paper (BibTex entry): 
+
+```
+@inproceedings{glavas-vulic-2019-generalized,
+    title = "Generalized Tuning of Distributional Word Vectors for Monolingual and Cross-Lingual Lexical Entailment",
+    author = "Glava{\v{s}}, Goran  and
+      Vuli{\'c}, Ivan",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1476",
+    doi = "10.18653/v1/P19-1476",
+    pages = "4824--4830"
+}
+```
