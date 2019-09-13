@@ -1,0 +1,16 @@
+The following resources are not part of the GitHub repo due to file sizes, but need to be obtained in order to successfully run GLEN:
+
+(1) the lexical constraints we used as training examples to learn the explicit specialization function for LE (needed if you're running the training script)
+(2) the serialized distributional space (fasttext, EN) which you can specialize (needed if you're running either the training or prediction script)
+(3) the pre-trained GLEN specialization model (needed if you're running the prediction script)
+
+These resources are available at: 
+https://drive.google.com/file/d/1d6re6aOuoTWvJ8M821G1bh3rNPLHv2yd/view?usp=sharing
+
+Download and unzip the archive and you will find three directories: 
+
+(1) constraints
+(2) distributional
+(3) model
+
+Copy these three directories into the this directory ("resources") in which you found this READ file.
